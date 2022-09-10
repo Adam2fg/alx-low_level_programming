@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
-* main - Entyr point
+* main - Entry point
 * Description: prints two digits combination
 * Return: Always 0 (success)
 */
@@ -13,7 +13,7 @@ for (c = '0'; c <= '9'; c++)
 for (i = '0'; i <= '9'; i++)
 {
 if
-(c < i);
+(c < i)
 {
 putchar(c);
 putchar(i);
