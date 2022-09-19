@@ -1,20 +1,26 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * *_strcpy -  copies the string pointed to by src
- * @dest: char type string
- * @src: char type string
- * Description: Copy the string pointed to by pointer `src` to
- * the buffer pointed to by `dest`
- * Return: Pointer to `dest
+ * print_array - print `n` elements of an array of integers
+ * @a: int type array pointer
+ * @n: int type integer
+ * Description: Numbers must be separated by comma and space.
+ * Numbers should be displayed in the same order they are stored in array.
+ * You can only use _putchar to print.
  */
 
-char *_strcpy(char *dest, char *src)
+void print_array(int *a, int n)
 {
-int i = -1;
-do {
-i++;
-dest[i] = src[i];
-} while (src[i] != '\0');
-return (dest);
+int i;
+i = 0;
+for (n--; n >= 0; n--, i++)
+{
+printf("%d", a[i]);
+if (n > 0)
+{
+printf(", ");
+}
+}
+printf("\n");
 }
