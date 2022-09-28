@@ -1,19 +1,16 @@
 #include "main.h"
 
 /**
- * _memset - ironnou
- * @s: pointer to char params
- * @b: data to change
- * @n: index
- * Return: *s
+ * _puts_recursion - Prints a string, followed by a new line.
+ * @s: The string to be printed.
  */
-
-char *_memset(char *s, char b, unsigned int n)
+void _puts_recursion(char *s)
 {
-unsigned int i;
-for (i = 0; i < n; i++)
+if (*s)
 {
-s[i] = b;
+_putchar(*s);
+_puts_recursion(s + 1);
 }
-return (s);
+else
+_putchar('\n');
 }
