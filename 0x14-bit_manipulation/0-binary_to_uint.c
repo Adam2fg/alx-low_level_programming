@@ -20,3 +20,4 @@ unsigned int binary_to_unit(const char *b)
 		dec_val = 2 * dec_val + (b[i] - '0');
 	}
 	return (dec_val);
+}
